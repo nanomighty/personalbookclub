@@ -20,9 +20,9 @@ const ListAll = (props) => {
         axios.get("http://localhost:8000/api/book")
             .then((res) => {
                 setAllBooks(allBooks.filter((book) => 
-                    book.bookTitle == searchValue ||
-                    book.bookAuthor == searchValue ||
-                    book.genre == searchValue
+                    book.bookTitle.toLowerCase() == searchValue.toLowerCase() ||
+                    book.bookAuthor.toLowerCase() == searchValue.toLowerCase() ||
+                    book.genre.toLowerCase() == searchValue.toLowerCase()
 
                     // Book.find({
                     //     $or : [
@@ -31,7 +31,7 @@ const ListAll = (props) => {
                     //         {genre: searchValue}
                     //     ]
                     // });
-                    
+
                 ));
             })
             .catch((err) => {
