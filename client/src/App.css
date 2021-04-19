@@ -1,0 +1,142 @@
+.App {
+  /* max-width: 70%; */
+  max-width: 60%;
+  margin: 5% auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+body {
+  background-image: url("grayBackground3.jpg");
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px 10px;
+}
+
+th {
+  padding: 15px 0px;
+  background-color: BurlyWood;
+  font-weight: bold;
+}
+td, th {
+  border: 1px dotted gray;
+  padding: 5px;
+}
+
+/* tr:nth-child(even) {
+  background-color: #cfcfcf;
+} */
+
+tr:hover {
+  background-color: Moccasin;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #4caf50;
+  color: white;
+  margin: 0px 10px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+button {
+  margin: 0px 10px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  background-color: #505170;
+}
+
+.greenBtn {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.blueBtn {
+  color: white;
+  background-color: #008CBA;
+}
+
+.redBtn {
+  color: black;
+  background-color: red;
+}
+
+.error-text {
+  color: red;
+  margin-left: 10px;
+}
+
+img {
+  max-width:100%;
+  width: 16%;
+  height:auto;
+  display: inline-block;;
+  margin: 3px 3px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.floatLeft {
+  width:60%;
+  float:left;
+  position: relative;
+  padding: 20px;
+}
+
+
+.floatRight {
+  width:30%;
+  float:right;
+  position: relative;
+  border: 1px black dashed;
+  padding: 40px;
+  margin-right: 20px;
+}
+
+hr {
+  margin: 25px;
+}
+
+.left {
+  text-align: left;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-evenly;
+
+  border: 1px whitesmoke solid;
+  background-color: gray;
+}
